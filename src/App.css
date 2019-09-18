@@ -131,6 +131,10 @@ table {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 
 .container {
     background-color: #c00025;
@@ -182,7 +186,7 @@ table {
     }
     
     .operator-button {
-    font-size: 12px;
+    font-size: 2rem;
     color: white;
     background: lightblue;
     height: 85px;
@@ -195,7 +199,7 @@ table {
     }
     
     .special-button {
-    font-size: 12px;
+    font-size: 2rem;
     color: white;
     background: blue;
     height: 85px;
@@ -208,7 +212,7 @@ table {
     }
     
     .number-button {
-    font-size: 12px;
+    font-size: 2rem;
     color: white;
     background: darkblue;
     height: 85px;
