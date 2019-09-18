@@ -14,8 +14,8 @@ const Specials = () => {
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
-       {specialState.map((item, index) => {
-         return <SpecialButton text={item} key={item}/>
+       {specialState.map((item) => {
+         return <SpecialButton text={item}/>
        })}
     </div>
   );

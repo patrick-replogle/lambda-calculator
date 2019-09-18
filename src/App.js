@@ -34,7 +34,6 @@ function App() {
           </div>
           <div className="right-div">
             <Operators />
-
           </div>
         </div>
         
