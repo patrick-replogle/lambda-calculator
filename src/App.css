@@ -137,96 +137,106 @@ html {
 
 
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+  background-color: #c00025;
+  margin-left: 30%;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding-bottom: 25px;
 }
+
 .display {
-    margin-top: 25px;
-    margin-left: 25px;
-    height: 100px;
-    width: 475px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+  margin-top: 25px;
+  margin-left: 25px;
+  height: 100px;
+  width: 475px;
+  border-radius: 50px;
+  color: white;
+  background-color: #322c2d;
+  box-shadow: 1px 1px #322c2d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 8%;
+  font-size: 5.0rem;
+}
+
+.logo {
+  margin-top: 25px;
+  margin-left: 25px;
+}
 
 .main-div {
-    display: flex;
-    width: 100%;
-    margin: 10px 0;
-    }
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+}
     
-    .left-div {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    }
+.left-div {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
 
-    .specials-div {
-        width: 100%;
-    }
-    .numbers-div {
-        width: 100%;
-    }
-    
-    .right-div{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    }
-    
-    .button {
-      font-size: 2.5rem;
-      color: white;
-      height: 85px;
-      width: 85px;
-      border-radius: 50%;
-      box-shadow: 0px 8px 8px black;
-    }
+.specials-div {
+  width: 100%;
+}
 
-    .button:hover{
-      background: black;
-    }
-    .operator-button {
-    background: lightblue;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    box-shadow: 0px 8px 8px black;
-    }
+.numbers-div {
+  width: 100%;
+}
     
-    .special-button {
-    background: blue;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 15px;
-    }
+.right-div{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
     
-    .number-button {
-    background: darkblue;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 15px;
-    }
+.button {
+  font-size: 2.5rem;
+  color: white;
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 8px black;
+}
 
-    .number-button:nth-child(10){
-        width: 220px;
-        border-radius: 80px;
-    }
-    .number-button:nth-child(11){
-        margin-left: 26px;
-    }
+.button:hover{
+  background: black;
+}
+
+.operator-button {
+  background: lightblue;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  box-shadow: 0px 8px 8px black;
+}
+    
+.special-button {
+  background: blue;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+    
+.number-button {
+  background: darkblue;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.number-button:nth-child(10){
+  width: 220px;
+  border-radius: 80px;
+}
+
+.number-button:nth-child(11){
+  margin-left: 26px;
+}
     
