@@ -17,16 +17,16 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
-  const [displayState, setDisplayState] = useState(0);
+  const [display, setDisplay] = useState(0);
 
   // const updateValue = param => {
   //   setDisplayState(displayState === '0' ? param : displayState + param);
   // }
 
-  // const resetValue = () => setDisplayState('0');
-  
+  // const resetValue = () => setDisplayState(0);
+
   // const calculateValue = () => {
-  //   setDisplayState(eval(displayState));
+  //   setDisplayState(eval(displayState))
   // }
 
   return (
@@ -34,18 +34,18 @@ function App() {
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display displayState={displayState}/>
+        <Display display={display}/>
         <div className="main-div">
           <div className="left-div">
             <div className="specials-div">
-              <Specials />
+              <Specials display={display} setDisplay={setDisplay} />
             </div>
             <div className="numbers-div">
-              <Numbers />
+              <Numbers display={display} setDisplay={setDisplay} />
             </div>
           </div>
           <div className="right-div">
-            <Operators />
+            <Operators display={display} setDisplay={setDisplay} />
           </div>
         </div>
       </div>
