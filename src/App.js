@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
-
-// Logo has already been provided for you. Do the same for the remaining components
+import Numbers from "./components/ButtonComponents/NumberButtons/Numbers.js";
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators.js";
+import Specials from "./components/ButtonComponents/SpecialButtons/Specials.js";
+import Display from "./components/DisplayComponents/Display.js";
 import Logo from "./components/DisplayComponents/Logo";
+//Logo has already been provided for you. Do the same for the remaining components
+
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -13,11 +17,37 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
+  const [display, setDisplay] = useState(0);
+
+  // const updateValue = param => {
+  //   setDisplayState(displayState === '0' ? param : displayState + param);
+  // }
+
+  // const resetValue = () => setDisplayState(0);
+
+  // const calculateValue = () => {
+  //   setDisplayState(eval(displayState))
+  // }
+
   return (
     <div className="container">
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        <Display display={display}/>
+        <div className="main-div">
+          <div className="left-div">
+            <div className="specials-div">
+              <Specials display={display} setDisplay={setDisplay} />
+            </div>
+            <div className="numbers-div">
+              <Numbers display={display} setDisplay={setDisplay} />
+            </div>
+          </div>
+          <div className="right-div">
+            <Operators display={display} setDisplay={setDisplay} />
+          </div>
+        </div>
       </div>
     </div>
   );
